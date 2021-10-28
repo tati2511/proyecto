@@ -1,0 +1,180 @@
+*{
+    padding: opx;
+    margin: 0px;
+}
+
+html{
+    background-color: rgb(147, 142, 151);
+}
+
+h1{
+    padding: 5px;
+    background: rgb(100, 21, 146);
+    border: 5px solid#000;
+    border-radius: 10px;
+}
+
+ .titulo{
+    color:orangered;
+    font-weight: normal;
+
+}
+
+.claseDiv {
+    color: orangered;
+}
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-container{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+background-color:rgb(229, 172, 231);
+text-align: left;
+border-collapse: collapse;
+width: 100%;
+}
+
+th,td {
+    padding: 20px;    
+}
+ 
+thead{
+    background-color: rgb(100, 21, 146);
+    border-bottom: solid 5px rgb(173, 98, 167);
+    color:black;
+}
+
+tr:nth-child(even){
+    background-color: rgb(207, 112, 207);
+}
+
+tr:hover td{
+    background-color: rgb(147, 142, 151);
+    color:black;
+}
+
+div{
+    width:100% ;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    display:inline-block;
+    border-radius: 5px;
+    border: 5px solid rgb(100, 21, 146);
+    position: relative;
+
+}
+
+.main{
+    width: 100%;
+    margin: auto;
+}
+
+video{
+  width: 100%;
+  border: 5px solid rgb(100, 21, 146);
+}
+
+.container {
+    background: rgb(177, 160, 160);
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footer,
+.container > .div {
+    background: rgb(82, 69, 69);
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.container .header,
+.container .footer {
+    grid-column: 1/6;
+    background: #1e272e;
+    color: #fff;
+}
+
+.container > .content {
+    grid-column: span 3;
+}
+
+.content > .article {
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9;
+}
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+}
+
+.container > .sidebar {
+    grid-column: span 2;
+    background: #485460;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.container .sidebar img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.container > .related-post {
+    background: #2d3436;
+    color: #fff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.container > .related-post:hover {
+    cursor: pointer;
+    color: #000;
+    background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1/-1;
+    }
+    
+    .container .sidebar {
+        grid-column: 1/-1;
+    }
+
+    .container .related-post {
+        grid-column: 1/-1;
+    }
+    
+}
+
+
